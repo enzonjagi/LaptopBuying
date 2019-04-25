@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textColor="#EB5050"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:text="@string/register_with_us"
+        />
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/firstname"
+        android:background="#ffffff"
+        android:autofillHints=""
+        android:inputType="" />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/last_name"
+        android:background="#ffffff"
+        android:importantForAutofill="no"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/usernameReg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:background="#ffffff"
+        android:importantForAutofill="no"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:background="#ffffff"
+        android:importantForAutofill="no"
+        android:inputType=""/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:background="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/cnfpassword"
+        android:background="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/confirm_password"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#A7794B"
+        android:text="Register" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_registered"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFEB3B"
+            android:background="#686565"/>
+
+        <TextView
+            android:id="@+id/LoginTxtVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginTop="30dp"
+            android:background="#686565"
+            android:text="@string/loginBtn" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
